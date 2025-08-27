@@ -4,9 +4,9 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.5.0' // Use the latest stable version as of 2025
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0' // Use the latest stable version
-        classpath 'com.google.gms:google-services:4.4.2' // Add this line for Firebase
+        classpath("com.android.tools.build:gradle:8.5.0") // Android Gradle plugin
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0") // Kotlin plugin
+        classpath("com.google.gms:google-services:4.4.2") // Google Services plugin
     }
 }
 
@@ -21,11 +21,11 @@ val newBuildDir: Directory =
     rootProject.layout.buildDirectory
         .dir("../../build")
         .get()
-rootProject.layout.buildDirectory.value(newBuildDir)
+rootProject.layout.buildDirectory.set(newBuildDir)
 
 subprojects {
     val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
-    project.layout.buildDirectory.value(newSubprojectBuildDir)
+    project.layout.buildDirectory.set(newSubprojectBuildDir)
 }
 
 subprojects {
