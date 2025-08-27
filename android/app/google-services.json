@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "314742102660",
+    "project_id": "savenest00",
+    "storage_bucket": "savenest00.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314742102660:android:9dc332437d18bbed9600d1",
+        "android_client_info": {
+          "package_name": "com.company.savenest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXfa405l_ybG9ELwK80wc1fypkcw2LBgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
